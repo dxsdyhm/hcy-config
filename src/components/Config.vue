@@ -25,7 +25,7 @@
 				</b-card>
 			</b-col>
 			<b-col sm="4">
-				<b-card class="text-left h-100" header="配置结果">
+				<b-card class="text-left" header="配置结果">
 					<pre class="m-0">{{ output }}</pre>
 				</b-card>
 			</b-col>
