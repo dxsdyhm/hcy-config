@@ -86,6 +86,10 @@
 						name: 'CVBS',
 						value: 'CVBS接口'
 					},
+					{
+						name: 'WIFISP',
+						value: 'Wifi带宽'
+					},
 				],
 				change: {
 
@@ -136,7 +140,12 @@ activated=0
 activated=0
 
 [CVBS]
-activated=0`,
+activated=0
+
+[WIFISP]
+activated=0
+cmd_iperf=iperf -c 192.168.100.13 -i 1 -t 5 -w 1M
+band_min=15`,
 				factory: {}
 			}
 		},
