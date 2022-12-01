@@ -90,6 +90,10 @@
 						name: 'WIFISP',
 						value: 'Wifi带宽'
 					},
+					{
+						name: 'SSD',
+						value: '节点存在'
+					},
 				],
 				change: {
 
@@ -144,8 +148,11 @@ activated=0
 
 [WIFISP]
 activated=0
-cmd_iperf=iperf -c 192.168.100.13 -i 1 -t 5 -w 1M
-band_min=15`,
+cmd_iperf=iperf -c 192.168.123.1 -i 1 -t 5 -w 1M
+band_min=15
+
+[SSD]
+path=/dev/block/sda|/dev/block/sdb`,
 				factory: {}
 			}
 		},
