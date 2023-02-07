@@ -94,6 +94,10 @@
 						name: 'SSD',
 						value: '节点存在'
 					},
+					{
+						name: 'INSTALL',
+						value: '预装'
+					},
 				],
 				change: {
 
@@ -152,7 +156,11 @@ cmd_iperf=iperf -c 192.168.123.1 -i 1 -t 5 -w 1M
 band_min=15
 
 [SSD]
-path=/dev/block/sda|/dev/block/sdb`,
+path=/dev/block/sda|/dev/block/sdb
+
+[INSTALL]
+apk_path=apps
+app_counts=0`,
 				factory: {}
 			}
 		},
